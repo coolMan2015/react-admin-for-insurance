@@ -1,0 +1,40 @@
+.wrapper {
+  background-color: #fff;
+
+  .row {
+    border-left: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+
+    &:last-child {
+      border-bottom: 1px solid #aaa;
+    }
+  }
+
+  .col {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+  }
+  .gray {
+    background-color: #ddd;
+  }
+
+  .col~.col {
+    border-left: 1px solid #aaa;
+  }
+
+  .col_right_align {
+    justify-content: flex-end;
+  }
+
+  .btn {
+    background-color: orange;
+    color: #fff;
+    &:hover {
+      background-color: darken(orange, 10%)!important;
+      color: #fff!important;
+      border-color: darken(orange, 10%) !important;
+    }
+  }
+}
